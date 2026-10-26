@@ -9,11 +9,27 @@ body {
     text-align: center;
     border: 1px solid blue;
     font-size: 3rem;
+    z-index: 99;
+    color: white;
+    -webkit-text-stroke: 2px black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #locations {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+#manchester {
+    background-image: url(./images/man-gym.jpg);
+    background-size: cover;
+    filter: brightness(20%);
+}
+
+#london {
+    background-image: url(./images/lon-gym.jpg);
+    background-size: cover;
+    filter: brightness(20%);
 }
 
 .gym {
