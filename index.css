@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    border: 1px solid blue;
+    font-size: 3rem;
+}
+
+#locations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gym {
+    border: 1px solid red;
+    height: 100vh;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+    background-color: black;
+    color: whitesmoke;
+}
+
+footer a {
+    text-decoration: none;
+    align-self: center;
+    color: whitesmoke;
+}
