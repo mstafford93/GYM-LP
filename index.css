@@ -21,15 +21,13 @@ body {
 }
 
 #manchester {
-    background-image: url(./images/man-gym.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/man-gym.jpg);
     background-size: cover;
-    filter: brightness(20%);
 }
 
 #london {
-    background-image: url(./images/lon-gym.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/lon-gym.jpg);
     background-size: cover;
-    filter: brightness(20%);
 }
 
 .gym {
