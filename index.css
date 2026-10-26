@@ -3,18 +3,32 @@ body {
     padding: 0;
 }
 
-#title {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    font-size: 4rem;
-    text-transform: uppercase;
-    z-index: 99;
+nav {
+    display: flex;
     background: linear-gradient(to right, rgba(47, 0, 255) 40%, rgb(207, 1, 1)60%);
-    background-clip: text; /*Hides background behind text*/
-    color: transparent; /*Colours text to background*/
-    -webkit-text-stroke: 2px black; /*text border*/
+    border: 1px solid black;
     font-family: "Urbanist", sans-serif;
+    color: whitesmoke;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+    height: 2rem;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 0.8rem;
+}
+
+nav a {
+    text-decoration: none;
+    align-self: center;
+    color: whitesmoke;
 }
 
 #locations {
@@ -23,9 +37,30 @@ body {
     gap: 0.1rem;
 }
 
+#brief {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5rem;
+    padding: 0.5rem;
+    margin-inline: auto;
+    width: fit-content;
+    background-color: rgb(82, 1, 82);
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 8px;
+    font-family: "Urbanist", sans-serif;
+    border: 0.25rem solid purple;
+    box-shadow: 5px 5px 5px rgb(90, 1, 90);
+}
+
+#brief h2 {
+    text-transform: uppercase;
+}
+
 #manchester {
-    background-image:url(./images/man-gym.jpg);
-    background-color:rgba(0, 0, 0, 0.6);
+    background-image: url(./images/man-gym.jpg);
+    background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
     background-size: cover;
     transition: all 2s;
@@ -37,8 +72,8 @@ body {
 }
 
 #london {
-    background-image:url(./images/lon-gym.jpg);
-    background-color:rgba(0, 0, 0, 0.6);
+    background-image: url(./images/lon-gym.jpg);
+    background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
     background-size: cover;
     transition: all 2s;
@@ -50,7 +85,7 @@ body {
 }
 
 .gym {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -63,8 +98,8 @@ body {
 }
 
 .man-button:hover {
-   background-color: rgb(252, 1, 1);
-   box-shadow: 2px 2px 2px rgb(247, 133, 133);
+    background-color: rgb(252, 1, 1);
+    box-shadow: 2px 2px 2px rgb(247, 133, 133);
 }
 
 .lon-button {
@@ -94,6 +129,7 @@ footer {
     padding: 0 0.5rem;
     background-color: black;
     color: whitesmoke;
+    font-family: "Urbanist", sans-serif;
 }
 
 footer a {
