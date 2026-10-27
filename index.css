@@ -137,3 +137,9 @@ footer a {
     align-self: center;
     color: whitesmoke;
 }
+
+/*Mobile items*/
+
+#burger {
+    display: none;
+}
