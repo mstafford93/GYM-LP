@@ -182,9 +182,6 @@ footer a {
 }
 
 @media (max-width: 800px) {
-    body {
-        
-    }
 
     #burger {
         display: block;
@@ -197,6 +194,7 @@ footer a {
     #mobile-buttons {
         display: flex;
         justify-content: space-between;
+        margin-top: 3rem;
     }
 
 
@@ -206,10 +204,7 @@ footer a {
 
     #brief {
         position: relative;
-        left: 0;
-        right: 0;
         top: 0;
-        padding: 0.5rem;
         margin-inline: none;
         width: auto;
         color: whitesmoke;
@@ -217,8 +212,9 @@ footer a {
         box-shadow: none;
         border-radius: 0;
         background-image: url(./images/lon-gym.jpg);
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(82, 1, 82, 0.9);
         background-blend-mode: multiply;
         background-size: cover;
+        height: 90vh;
     }
 }
